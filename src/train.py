@@ -15,7 +15,7 @@ from transformers import get_linear_schedule_with_warmup
 
 def run():
     df1 = pd.read_csv("../input/jigsaw-toxic-comment-train.csv", usecols=["comment_text", "toxic"])
-    df2 = pd.read_csv("../input/jigsaw-unintended-bias-train.csv", usecols=["comment_text", "toxic")
+    df2 = pd.read_csv("../input/jigsaw-unintended-bias-train.csv", usecols=["comment_text", "toxic"])
 
     df_train = pd.concat([df1, df2], axis=0).reset_index(drop=True)
     df_valid = pd.read_csv("../input/validation.csv")
