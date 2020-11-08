@@ -8,7 +8,6 @@ VALID_BATCH_SIZE = 4
 EPOCHS = 1
 BERT_PATH = "../input/bert_base_uncased/"
 MODEL_PATH = "model.bin"
-TRAINING_FILE = "../input/"
 TOKENIZER = transformers.BertTokenizer.from_pretrained(
     BERT_PATH,
     do_lower_case=True
